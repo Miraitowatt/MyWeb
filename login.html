@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    
+    <link rel="stylesheet"  href="css/header.css" >
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet"  href="css/footer.css" >
+    <title>login</title>
+</head>
+
+<body>
+
+    <!--—————— header ——————-->
+
+<!--—————— header ——————-->
+<header class="header">
+    <a href="home.html" class="logo"> <i class="fas fa-flower"></i> ちいかわ </a>
+    <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="character.html">character</a>
+        <a href="read.html">read</a>
+        <a href="product.html">product</a>
+        <a href="login.html">login</a>
+    </nav>
+
+    <div class="icons">
+       <div id="search-btn" class="fas fa-search"></div>
+       <div id="cart-btn" class="fas fa-shopping-cart"></div>
+       <div id="love-btn" class="fas fa-heart"></div>
+   </div>
+
+<!--—————— header·loving ——————-->
+   <div class="loving">
+       <div class="box">
+           <i class="fas fa-times"></i>
+           <img src="./images/love/love1.png" alt="">
+           <div class="content">
+               <h3>Volume One</h3>
+               <span class="price">¥1024</span>
+           </div>
+       </div>
+       <div class="box">
+           <i class="fas fa-times"></i>
+           <img src="./images/products/01.png" alt="">
+           <div class="content">
+               <h3>Ride Hachiware</h3>
+               <span class="price">¥2750</span>
+           </div>
+       </div>
+       <div class="box">
+           <i class="fas fa-times"></i>
+           <img src="./images/products/08.png" alt="">
+           <div class="content">
+               <h3>Play Usagi</h3>
+               <span class="price">¥2750</span>
+           </div>
+       </div>
+       <div class="box">
+           <i class="fas fa-times"></i>
+           <img src="./images/love/love2.png" alt="">
+           <div class="content">
+               <h3>Episode 4</h3>
+               <span class="price">To be viewed...</span>
+           </div>
+       </div>
+   </div>
+
+</header>
+   
+     <!--—————— 表单 ——————-->
+
+<div class="container">
+     <div class="signin-signup">
+         <form action="" class="sign-in-form">
+    <!--form元素用于创建一个表单，
+    表单的action属性为空——如果不指定具体的URL，表单数据将会默认提交到当前页面的URL-->
+
+            <h2 class="title">Sign in</h2>
+
+            <div class="input-field">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Username">
+        <!--placeholder属性提供提示信息，当输入框处于未输入状态时,该信息会显示在输入框内部。-->
+            </div>
+
+            <div class="input-field">
+                 <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password">
+            </div>
+            <input type="submit" value="Login" class="btn">
+            <p class="social-text">Or Sign in with social platform</p>
+
+            <div class="social-media">
+                 <a href="#" class="social-icon">
+                    <i class="fab fa-weixin"></i>
+                </a>
+                <a href="" class="social-icon">
+                     <i class="fab fa-weibo"></i>
+                </a>
+                <a href="" class="social-icon">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+
+         </form>
+         
+        <form action="" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+
+            <div class="input-field">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Username">
+            </div>
+
+            <div class="input-field">
+                 <i class="fas fa-envelope"></i>
+                 <input type="text" placeholder="Email">
+            </div>
+
+            <div class="input-field">
+                 <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password">
+            </div>
+
+            <input type="submit" value="Sign up" class="btn">
+            <p class="social-text">Or Sign in with social platform</p>
+
+             <div class="social-media">
+                <a href="#" class="social-icon">
+                    <i class="fab fa-weixin"></i>
+                </a>
+                <a href="" class="social-icon">
+                     <i class="fab fa-weibo"></i>
+                </a>
+                <a href="" class="social-icon">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+             </div>
+
+        </form>
+    </div>
+
+      <!--—————— 滑块 ——————-->
+
+    <div class="panels-container">
+        <div class="panel left-panel">
+             <div class="content">
+                <h3>Member of Land?</h3>
+                <p>Log in and start your Chiikawa Land tour!</p>
+                <button class="btn" id="sign-in-btn">Sign in</button>
+            </div>
+            <img src="./images/log-1.png" alt="" class="image">
+        </div>
+
+        <div class="panel right-panel">
+            <div class="content">
+                <h3>New to Land?</h3>
+                <p>Sign up and join our fun Chiikawa Land!</p>
+                <button class="btn" id="sign-up-btn">Sign up</button>
+            </div>
+            <img src="./images/log-2.png" alt="" class="image">
+        </div>
+    </div>
+ </div>
+
+  <!--—————— footer ——————-->
+
+ <section class="footer">
+
+    <img src="./images/footer-wave.png" alt="">
+
+    <div class="share">
+        <a href="#" class="btn-second"> <i class="fab fa-facebook-f"></i> facebook </a>
+        <a href="https://twitter.com/ngnchiikawa" class="btn-second"> <i class="fab fa-twitter"></i> twitter </a>
+        <a href="#" class="btn-second"> <i class="fab fa-instagram"></i> instagram </a>
+    </div>
+
+    <div class="credit"> created by <span>Zhao Ziting</span>｜2021202417@ruc.edu.cn </div>
+</section>
+ <script src="./js/log.js"></script>
+ <script src="./js/header.js"></script>
+</body>
+
+</html>

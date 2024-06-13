@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/read.css">
+    <link rel="stylesheet"  href="./css/header.css" >
+    <link rel="stylesheet"  href="./css/footer.css" >
+    <title>read</title>
+</head>
+
+ <!--————header———————-->
+<body>
+    <!--—————— header ——————-->
+    <header class="header">
+        <a href="home.html" class="logo"> <i class="fas fa-flower"></i> ちいかわ </a>
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="character.html">character</a>
+            <a href="read.html">read</a>
+            <a href="product.html">product</a>
+            <a href="login.html">login</a>
+        </nav>
+
+        <div class="icons">
+           <div id="search-btn" class="fas fa-search"></div>
+           <div id="cart-btn" class="fas fa-shopping-cart"></div>
+           <div id="love-btn" class="fas fa-heart"></div>
+       </div>
+<!--—————— header·search ——————-->
+        <form action="" class="search-form">
+           <input type="search" placeholder="search here..." id="search-box">
+           <label for="search-box" class="fas fa-search"></label>
+       </form>
+
+ <!--—————— header·shopping ——————-->
+       <div class="shopping-cart">
+           <div class="box">
+               <i class="fas fa-times"></i>
+               <img src="./images/products/01.png" alt="">
+               <div class="content">
+                   <h3>Momonga tail</h3>
+                   <span class="quantity">1</span>
+                   <span class="multiply">x</span>
+                   <span class="price">¥1760</span>
+               </div>
+           </div>
+           <div class="box">
+               <i class="fas fa-times"></i>
+               <img src="./images/products/02.png" alt="">
+               <div class="content">
+                   <h3>nahowahowa</h3>
+                   <span class="quantity">1</span>
+                   <span class="multiply">x</span>
+                   <span class="price">¥2750</span>
+               </div>
+           </div>
+           <div class="box">
+               <i class="fas fa-times"></i>
+               <img src="./images/products/03.png" alt="">
+               <div class="content">
+                   <h3>grief Hachiware</h3>
+                   <span class="quantity">1</span>
+                   <span class="multiply">x</span>
+                   <span class="price">¥2250</span>
+               </div>
+           </div>
+           <h3 class="total"> total : <span>¥6760</span> </h3>
+           <a href="#" class="btn">checkout cart</a>
+       </div>
+
+<!--—————— header·loving ——————-->
+       <div class="loving">
+           <div class="box">
+               <i class="fas fa-times"></i>
+               <img src="./images/love/love1.png" alt="">
+               <div class="content">
+                   <h3>Volume One</h3>
+                   <span class="price">¥1024</span>
+               </div>
+           </div>
+           <div class="box">
+               <i class="fas fa-times"></i>
+               <img src="./images/products/01.png" alt="">
+               <div class="content">
+                   <h3>Ride Hachiware</h3>
+                   <span class="price">¥2750</span>
+               </div>
+           </div>
+           <div class="box">
+               <i class="fas fa-times"></i>
+               <img src="./images/products/08.png" alt="">
+               <div class="content">
+                   <h3>Play Usagi</h3>
+                   <span class="price">¥2750</span>
+               </div>
+           </div>
+           <div class="box">
+               <i class="fas fa-times"></i>
+               <img src="./images/love/love2.png" alt="">
+               <div class="content">
+                   <h3>Episode 4</h3>
+                   <span class="price">To be viewed...</span>
+               </div>
+           </div>
+       </div>
+
+   </header>
+
+
+    <main class="main">
+
+        <!--————home———————-->
+        <section class="home section" id="home">
+        <div class="home__container container grid">
+            <div class="home__data">
+                <h1 class="home__title">
+                <span>welcome To Chiikawa Study</span>
+                    Browse&Order <br>
+                    derivative books 📖 🔍
+                </h1>
+
+                <a href="#" class="button">Explore Now</a>
+            </div>
+
+            <div class="home__images">
+                <div class="home__swiper swiper">
+                    <div class="swiper-wrapper">
+                        
+                    <article class="home__article swiper-slide">
+                        <img src="./images/book-img/04.png" alt="image" class="home__img">
+                    </article>
+
+                    <article class="home__article swiper-slide">
+                        <img src="./images/book-img/06.png" alt="image" class="home__img">
+                    </article>
+
+                    <article class="home__article swiper-slide">
+                        <img src="./images/book-img/08.png" alt="image" class="home__img">
+                    </article>
+
+                    <article class="home__article swiper-slide">
+                        <img src="./images/book-img/013.png" alt="image" class="home__img">
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!--————services——————-->
+        
+        <section class="services section">
+        <div class="services__container container grid">
+            <article class="services__card">
+                <i class="ri-truck-line"></i>
+                <h3 class="services__title">Free Shipping</h3>
+                <p class="services__description">Order More Than 5000¥</p>
+            </article>
+
+            <article class="services__card">
+                <i class="ri-lock-2-line"></i>
+                <h3 class="services__title">Secure Payment</h3>
+                <p class="services__description">100% Secure Payment</p>
+            </article>
+
+            <article class="services__card">
+                <i class="ri-customer-service-2-line"></i>
+                <h3 class="services__title">24/7 Support</h3>
+                <p class="services__description">Call us anytime</p>
+            </article>
+        </div>
+        </section>
+
+
+        <!--——————Volumes——————-->
+        <section class="Volumn section" id="Volumn">
+        <h2 class="section__title">
+            Manga Volumes
+        </h2>
+
+        <div class="Volume__container container">
+            <div class="Volume__swiper swiper">
+                <div class="swiper-wrapper">
+
+                    <article class="Volume__card swiper-slide">
+                    <img src="./images/book-img/01.png" alt="image" class="Volume__img">
+                    <h2 class="Volume__title">Volume One</h2>
+                    <div class="Volume__prices">
+                        <span class="Volume__discount">¥1024</span>
+                        <soan class="Volume__price">¥1280</soan>
+                    </div>
+                    <button class="button">Add To Cart</button>
+                    <div class="Volume__actions">
+                        <button><i class="ri-search-line"></i></button>
+                        <button><i class="ri-heart-3-line"></i></button>
+                        <button><i class="ri-eye-line"></i></button>
+                    </div>
+                    </article>
+
+                    <article class="Volume__card swiper-slide">
+                    <img src="./images/book-img/02.png" alt="image" class="Volume__img">
+                    <h2 class="Volume__title">Volume One</h2>
+                    <div class="Volume__prices">
+                        <span class="Volume__discount">¥1024</span>
+                        <soan class="Volume__price">¥1280</soan>
+                    </div>
+                    <button class="button">Add To Cart</button>
+                    <div class="Volume__actions">
+                        <button><i class="ri-search-line"></i></button>
+                        <button><i class="ri-heart-3-line"></i></button>
+                        <button><i class="ri-eye-line"></i></button>
+                    </div>
+                    </article>
+
+                    <article class="Volume__card swiper-slide">
+                    <img src="./images/book-img/03.png" alt="image" class="Volume__img">
+                    <h2 class="Volume__title">Volume Two</h2>
+                    <div class="Volume__prices">
+                        <span class="Volume__discount">¥1024</span>
+                        <soan class="Volume__price">¥1280</soan>                   
+                    </div>
+                    <button class="button">Add To Cart</button>
+
+                    <div class="Volume__actions">
+                        <button><i class="ri-search-line"></i></button>
+                        <button><i class="ri-heart-3-line"></i></button>
+                        <button><i class="ri-eye-line"></i></button>
+                    </div>
+                    </article>
+
+                    <article class="Volume__card swiper-slide">
+                    <img src="./images/book-img/04.png" alt="image" class="Volume__img">
+                    <h2 class="Volume__title">Volume Two</h2>
+                    <div class="Volume__prices">
+                        <span class="Volume__discount">¥1024</span>
+                        <soan class="Volume__price">¥1280</soan>                   
+                    </div>
+                    <button class="button">Add To Cart</button>
+                    <div class="Volume__actions">
+                        <button><i class="ri-search-line"></i></button>
+                        <button><i class="ri-heart-3-line"></i></button>
+                        <button><i class="ri-eye-line"></i></button>
+                    </div>
+                    </article>
+
+                    <article class="Volume__card swiper-slide">
+                    <img src="./images/book-img/05.png" alt="image" class="Volume__img">
+                    <h2 class="Volume__title">Volume Three</h2>
+                    <div class="Volume__prices">
+                        <span class="Volume__discount">¥1024</span>
+                        <soan class="Volume__price">¥1280</soan>                   
+                    </div>
+                    <button class="button">Add To Cart</button>
+                    <div class="Volume__actions">
+                        <button><i class="ri-search-line"></i></button>
+                        <button><i class="ri-heart-3-line"></i></button>
+                        <button><i class="ri-eye-line"></i></button>
+                    </div>
+                    </article>
+
+                    <article class="Volume__card swiper-slide">
+                    <img src="./images/book-img/06.png" alt="image" class="Volume__img">
+                    <h2 class="Volume__title">Volume Three</h2>
+                    <div class="Volume__prices">
+                        <span class="Volume__discount">¥1024</span>
+                        <soan class="Volume__price">¥1280</soan>                   
+                    </div>
+                    <button class="button">Add To Cart</button>
+                    <div class="Volume__actions">
+                        <button><i class="ri-search-line"></i></button>
+                        <button><i class="ri-heart-3-line"></i></button>
+                        <button><i class="ri-eye-line"></i></button>
+                    </div>
+                    </article>
+
+                    <article class="Volume__card swiper-slide">
+                    <img src="./images/book-img/07.png" alt="image" class="Volume__img">
+                    <h2 class="Volume__title">Volume four</h2>
+                    <div class="Volume__prices">
+                        <span class="Volume__discount">¥1024</span>
+                        <soan class="Volume__price">¥1280</soan>                   
+                    </div>
+                    <button class="button">Add To Cart</button>
+                    <div class="Volume__actions">
+                        <button><i class="ri-search-line"></i></button>
+                        <button><i class="ri-heart-3-line"></i></button>
+                        <button><i class="ri-eye-line"></i></button>
+                    </div>
+                    </article>
+
+                    <article class="Volume__card swiper-slide">
+                    <img src="./images/book-img/08.png" alt="image" class="Volume__img">
+                    <h2 class="Volume__title">Volume Four</h2>
+                    <div class="Volume__prices">
+                        <span class="Volume__discount">¥1024</span>
+                        <soan class="Volume__price">¥1280</soan>
+                    </div>
+                    <button class="button">Add To Cart</button>
+                    <div class="Volume__actions">
+                        <button><i class="ri-search-line"></i></button>
+                        <button><i class="ri-heart-3-line"></i></button>
+                        <button><i class="ri-eye-line"></i></button>
+                    </div>
+                    </article>
+
+                    <article class="Volume__card swiper-slide">
+                    <img src="./images/book-img/09.png" alt="image" class="Volume__img">
+                    <h2 class="Volume__title">Volume Five</h2>
+                    <div class="Volume__prices">
+                        <span class="Volume__discount">¥1024</span>
+                        <soan class="Volume__price">¥1280</soan>
+                    </div>
+                    <button class="button">Add To Cart</button>
+                    <div class="Volume__actions">
+                        <button><i class="ri-search-line"></i></button>
+                        <button><i class="ri-heart-3-line"></i></button>
+                        <button><i class="ri-eye-line"></i></button>
+                    </div>
+                    </article>
+
+                    <article class="Volume__card swiper-slide">
+                    <img src="./images/book-img/010.png" alt="image" class="Volume__img">
+                    <h2 class="Volume__title">Volume Five</h2>
+                    <div class="Volume__prices">
+                        <span class="Volume__discount">¥1024</span>
+                        <soan class="Volume__price">¥1280</soan>
+                    </div>
+                    <button class="button">Add To Cart</button>
+                    <div class="Volume__actions">
+                        <button><i class="ri-search-line"></i></button>
+                        <button><i class="ri-heart-3-line"></i></button>
+                        <button><i class="ri-eye-line"></i></button>
+                    </div>
+                    </article>
+
+                    <article class="Volume__card swiper-slide">
+                    <img src="./images/book-img/011.png" alt="image" class="Volume__img">
+                    <h2 class="Volume__title">Volume Six</h2>
+                    <div class="Volume__prices">
+                        <span class="Volume__discount">¥1024</span>
+                        <soan class="Volume__price">¥1280</soan>
+                    </div>
+                    <button class="button">Add To Cart</button>
+                    <div class="Volume__actions">
+                         <button><i class="ri-search-line"></i></button>
+                        <button><i class="ri-heart-3-line"></i></button>
+                        <button><i class="ri-eye-line"></i></button>
+                    </div>
+                    </article>
+
+                    <article class="Volume__card swiper-slide">
+                        <img src="./images/book-img/012.png" alt="image" class="Volume__img">
+                        <h2 class="Volume__title">Volume Six</h2>
+                        <div class="Volume__prices">
+                            <span class="Volume__discount">¥1024</span>
+                            <soan class="Volume__price">¥1280</soan>
+                        </div>
+                            <button class="button">Add To Cart</button>
+                        <div class="Volume__actions">
+                             <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-3-line"></i></button>
+                            <button><i class="ri-eye-line"></i></button>
+                        </div>
+                        </article>
+                </div>
+
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!--—————— discount————————-->
+        <section class="discount section" id="discount">
+        <div class="discount__container container grid">
+            <div class="discount__data">
+                <h2 class="discount__title section__title">
+                    Up To 30% Discount
+                </h2>
+
+                <p class="discount__description">
+                     <br>
+                    Take advantage of the discount days we
+                    have for you<br>
+                    Hot books are on sale 📚<br>
+                    order now and get up to 🏷️ 30% off<br>
+                    A variety of peripheral books are available for purchas 🛒
+                </p>
+
+                <a href="#" class="button">Order Now</a>
+            </div>
+
+            <div class="discount__images">
+                <img src="./images/book-img/016.png" alt="image" class="discount__img-1">
+                <img src="./images/book-img/014.png" alt="image" class="discount__img-2">
+            </div>
+        </div>
+        </section>
+
+        <!--——————new book————————-->
+
+        <section class="new section" id="new">
+        <h2 class="section__title">
+            New Books
+        </h2>
+
+        <div class="new__container container">
+            <div class="new__swiper swiper">
+                <div class="swiper-wrapper">
+                    <a href="#" class="new__card swiper-slide">
+                    <img src="./images/book-img/017.png" alt="image" class="new__img">
+                    <div>
+                        <h2 class="new__title">English Conversation</h2>
+                        <div class="new__prices">
+                            <span class="new__price">¥1870</span>
+                        </div>
+                        <div class="new__stars">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-half-fill"></i>
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="#" class="new__card swiper-slide">
+                    <img src="./images/book-img/016.png" alt="image" class="new__img">
+                    <div>
+                        <h2 class="new__title">Psychological Test</h2>
+                        <div class="new__prices">
+                            <span class="new__price">¥1260</span>
+                            <span class="new__past">¥1870</span>
+                        </div>
+                        <div class="new__stars">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-half-fill"></i>
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="#" class="new__card swiper-slide">
+                    <img src="./images/book-img/015.png" alt="image" class="new__img">
+                    <div>
+                        <h2 class="new__title">Four-word Idion</h2>
+                        <div class="new__prices">
+                            <span class="new__price">¥1580</span>
+                        </div>
+                        <div class="new__stars">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-half-fill"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+       </section>
+    </main>
+
+ <!--———— footer ———————-->
+    <section class="footer">
+        <img src="./images/footer-wave.png" alt="">
+
+        <div class="share">
+            <a href="#" class="btn-second"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="https://twitter.com/ngnchiikawa" class="btn-second"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#" class="btn-second"> <i class="fab fa-instagram"></i> instagram </a>
+        </div>
+
+        <div class="credit"> created by <span>Zhao Ziting</span>｜2021202417@ruc.edu.cn </div>
+    </section>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/header.js"></script>
+ </body>
+</html>
+

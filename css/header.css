@@ -1,0 +1,255 @@
+@import "reset.css";
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    height: 85px;
+  }
+
+  .header .logo {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: #d8abb2;
+  }
+
+
+  .header .logo i {
+    color: #d8abb2;
+    padding-right: .5rem;
+    vertical-align: middle;
+  }
+
+  .header .navbar a {
+    font-size: 1.3rem;
+    color: #666;
+    margin: 0 1rem;
+  }
+
+  .header .navbar a:hover {
+    color: #d8abb2;
+  }
+
+  .header .icons div {
+    font-size: 1.5rem;
+    margin-left: 1.2rem;
+    cursor: pointer;
+    color: #666;
+  }
+
+  .header .icons div:hover {
+    color: #d8abb2;
+  }
+
+  /*———————————search——————————*/
+
+  .header .search-form {
+    position: absolute;
+    top: -115%;
+    right: 2rem;
+    width: 40rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    background: #fff;
+  }
+
+  .header .search-form.active {
+    top: 115%;
+    transition: .2s linear;
+  }
+
+  .header .search-form input {
+    height: 100%;
+    width: 100%;
+    padding: 0 1.2rem;
+    font-size: 1.3rem;
+    color: #222;
+    text-transform: none;
+    border: transparent
+  }
+
+  .header .search-form label {
+    font-size: 1.6rem;
+    margin-right: 1.7rem;
+    cursor: pointer;
+    color: #666;
+  }
+
+  .header .search-form label:hover {
+    color: #d8abb2;
+  }
+
+   /*————————————shopping——————————*/
+  .header .shopping-cart {
+    position: absolute;
+    top: 115%;
+    right: -105%;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    width: 35rem;
+    padding: 2rem;
+  }
+
+  .header .shopping-cart.active {
+    right: 2rem;
+    transition: .4s linear;
+  }
+
+  .header .shopping-cart .box {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+
+  .header .shopping-cart .box .fa-times {
+    position: absolute;
+    top: 50%;
+    right: 3rem;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #666;
+    cursor: pointer;
+  }
+
+  .header .shopping-cart .box .fa-times:hover {
+    color: #d8abb2;
+  }
+
+  .header .shopping-cart .box img {
+    height: 8rem;
+
+  }
+
+  .header .shopping-cart .box .content h3 {
+    font-size: 1.6rem;
+    padding-bottom: .5rem;
+    color: #222;
+  }
+
+  .header .shopping-cart .box .content span {
+    font-size: 1.4rem;
+    color: #666;
+  }
+
+  .header .shopping-cart .box .content span.multiply {
+    margin: 0 .5rem;
+  }
+
+  .header .shopping-cart .total {
+    color: #666;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: -0.6rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .header .shopping-cart .total span {
+    color: #222;
+  }
+
+  .header .shopping-cart .btn {
+   text-align: center;
+    width: 100%;
+    margin-top: 0.1rem;
+    display: inline-block;
+    padding: .5rem 2rem;
+    background: #d8abb2;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+  }
+
+
+  .header .shopping-cart .btn:hover {
+    background: #bc9292;
+  }
+
+
+  /*————————————————loving————————————*/
+  .header .loving {
+    position: absolute;
+    top: 115%;
+    right: -105%;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    width: 35rem;
+    padding: 2rem;
+  }
+
+  .header .loving.active {
+    right: 2rem;
+    transition: .4s linear;
+  }
+
+  .header .loving .box {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+
+  .header .loving .box .fa-times {
+    position: absolute;
+    top: 50%;
+    right: 3rem;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #666;
+    cursor: pointer;
+  }
+
+  .header .loving .box .fa-times:hover {
+    color: #d8abb2;
+  }
+
+  .header .loving .box img {
+    height: 7rem;
+  }
+
+  .header .loving .box .content h3 {
+    font-size: 1.6rem;
+    padding-bottom: .5rem;
+    color: #222;
+  }
+
+  .header .loving .box .content span {
+    font-size: 1.4rem;
+    color: #666;
+  }
+
+  .header .loving .box .content span.multiply {
+    margin: 0 .5rem;
+  }
+
+  .header .loving .total {
+    color: #666;
+    text-align: center;
+    font-size: 2.2rem;
+  }
+
+  .header .loving .total span {
+    color: #222;
+  }
+
+  .header .loving .btn {
+    text-align: center;
+    width: 100%;
+  }

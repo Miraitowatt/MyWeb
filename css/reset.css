@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    /*整个页面（包括内部各个容器）的滚动行为。
+    设置为smooth时，页面内的锚点跳转或者其他触发滚动的行为将会产生平滑滚动的效果，而不是立即跳到目标位置。*/
+    scroll-padding-top: 6rem;
+    /*用于指定元素（在这里是整个页面）顶部的滚动区域，在页面滚动到对应的锚点时，会保留这个额外的顶部内边距，防止其被浏览器地址栏、固定顶部导航等遮挡。
+    6rem表示6倍于当前根元素字体大小的距离。*/
+}
+
+
+
+html::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #d8abb2;
+    border-radius: 5rem;
+}

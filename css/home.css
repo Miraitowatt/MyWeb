@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+::selection {
+    background: rgba(0, 0, 0, .2);
+}
+
+body {
+    background: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/*——————————parallax————————*/
+
+.parallax {
+    display: flex;
+    justify-content: center;
+    /*所有的子元素将在主轴（默认为水平方向）上居中对齐*/
+    align-items: center;
+    /*所有的子元素将在交叉轴上（默认垂直）居中对齐*/
+    height: 100vh;
+    /* 视窗高度的100%，元素的高度将始终等于浏览器视口的高度。
+    无论屏幕大小如何变化，元素都会占据整个视口的高度*/
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.parallax a {
+  position: absolute;
+  top: 42%;
+  left: 42%;
+  width: 13.5%;
+}
+/*—————————intro————————*/
+
+.intro {
+    padding: 10rem 30px 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .intro .image {
+    flex: 1 1 40rem;
+  }
+
+  .intro .image img {
+    width: 100%;
+  }
+
+  .intro .content {
+    flex: 1 1 40rem;
+  }
+
+  .intro .content span {
+    color: #d8abb2;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .intro .content h3 {
+    color: #222;
+    font-size: 3.1rem;
+    padding-top: .5rem;
+    font-weight: 700;
+  }
+
+  .intro .content p {
+    color: #666;
+    font-size: 1.4rem;
+    line-height: 2;
+    padding: 1rem 0;
+  }
+
+  /*—————————Episode————————*/
+
+  .Episode{
+      padding: 0 4rem;
+  }
+    .Episode .title{
+      margin: 5%;
+      margin-bottom: 1.6rem;
+    }
+
+    .Episode .title span{
+        font-size: 4rem;
+        padding-right: 45rem;
+        color: #b9949a;
+      }
+
+    .Episode .title a{
+        color: black;
+      }
+  
+    .Episode .title a:hover{
+       color: #d8abb2;
+      }
+
+  .Episode .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+  }
+
+  .Episode .box-container .box {
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+  }
+
+  .Episode .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .Episode .box-container .box:hover img {
+    transform: scale(1.2);
+  }
+
+  .Episode .box-container .box .icons {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1.5rem 0;
+    position: absolute;
+    bottom: -6rem;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .Episode .box-container .box:hover .icons {
+    bottom: 0;
+  }
+
+  .Episode .box-container .box .icons a {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0 1.5rem;
+  }
+
+  .Episode .box-container .box .icons a:hover {
+    color: #d8abb2;
+  }
+
+  /*—————————botton————————*/
+
+  .btn {
+    margin-top: 0.1rem;
+    display: inline-block;
+/*既像inline元素那样在行内排列（不会独占一行，相邻的行内元素会紧挨着它显示），又像block元素那样可以设置宽度、高度以及顶部和底部的外边距和内边距。*/
+    padding: .5rem 2rem;
+    background: #d8abb2;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+  }
+
+  .btn:hover {
+    background: #bc9292;
+  }
+
+   /*—————————contact————————*/
+   
+  .contact{
+      padding: 0 4rem;
+      margin: 2rem 0;
+  }
+  .contact h1 {
+      text-align: center;
+      font-size: 4rem;
+      margin-bottom: 2rem;
+      font-weight: bold;
+      color: #b9949a;
+  }
+  .contact .row{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap:1.5rem;
+    align-items: center;
+}
+
+.contact .row form{
+    flex:1 1 23rem;
+    padding:2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(192, 158, 158, 0.1);
+    background: #fff;
+    border-radius: .5rem;
+}
+
+.contact .row .image{
+    flex:1 1 33rem;
+}
+
+.contact .row .image img{
+    width: 100%;
+}
+
+.contact .row form .box{
+    padding:1rem;
+    font-size: 1.4rem;
+    color:#333;
+    text-transform: none;
+    border:.1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    margin:.7rem 0;
+    width: 100%;
+}
+
+.contact .row form .box:focus{
+    border-color: #d8abb2;
+}
+
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}

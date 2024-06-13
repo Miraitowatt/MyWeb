@@ -1,0 +1,497 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body,
+input,
+button {
+  font-size: 1rem;
+}
+
+body {
+  background-color: white;
+  color: #9d9d9d;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+h1, h2, h3, h4 {
+  color: #9d797d;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1220px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 1rem;
+}
+
+.section__title {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.main {
+  overflow: hidden; /* animation ScrollReveal */
+}
+
+/*——————home—————————*/
+
+.home__swiper {
+  margin: initial;
+}
+
+.home__container {
+  padding-top: 2rem;
+  row-gap: 2.5rem;
+}
+
+.home__data {
+  text-align: center;
+}
+
+.home__title {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: rgb(129, 89, 89);
+  line-height: 1.5;
+}
+
+.home__title span{
+  font-size: 1.5rem;
+  color:#d8abb2
+}
+
+.home__images {
+  display: grid;
+}
+
+.home__article,
+.home__img {
+  width: 220px;
+  transition: scale .4s;
+}
+
+.home__article {
+  scale: .8;
+}
+
+/* ————Swiper———— */
+.swiper-slide-active,
+.swiper-slide-duplicate-active {
+  scale: 1;
+}
+/*确保Swiper中被激活显示的slide都按照原始尺寸显示，没有缩放效果*/
+
+/*————button——————*/
+
+.button {
+  display: inline-block;
+  background-color: #d8abb2;
+  color: white;
+  border-radius: .5rem;
+  padding: .7rem 1.8rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  transition: box-shadow .4s;
+}
+
+.button:hover {
+  box-shadow: 0 4px 32px #d8abb2;
+}
+
+/*————service————*/
+
+.services__container {
+  row-gap: 3rem;
+}
+
+.services__card {
+  text-align: center;
+}
+
+.services__card i {
+  display: block;
+  font-size: 3rem;
+  color: #d8abb2;
+  margin-bottom: 1rem;
+}
+
+.services__title {
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+/*——————————Volumn——————————*/
+
+.Volume__card {
+  position: relative;
+  text-align: center;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  padding: 2rem;
+  overflow: hidden;
+  transition: border .4s, background-color .4s;
+}
+
+.Volume__img {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.Volume__title {
+ font-size: 1.5rem;
+ margin-bottom: .5rem;
+}
+
+.Volume__prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .75rem;
+  margin-bottom: 1.25rem;
+}
+
+.Volume__price {
+  font-size: .813rem;
+  text-decoration: line-through;
+}
+
+.Volume__card .button {
+  cursor: pointer;
+}
+
+.Volume__actions {
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: .75rem;
+  position: absolute;
+  top: 2rem;
+  right: -1.5rem;
+  transition: right .4s;
+}
+
+.Volume__actions button {
+  background: none;
+  font-size: 1.25rem;
+  color: #d8abb2;
+  cursor: pointer;
+}
+
+.Volume__card:hover .Volume__actions {
+  right: 1.5rem;
+}
+
+/*———————— Swiper button ————————*/
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+}
+/* 移除按钮默认的伪元素内容*/
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: initial;
+  height: initial;
+  background-color: #f6f6f6;
+  border: 2px solid rgb(220, 212, 212);
+  padding: .5rem;
+  font-size: 1.5rem;
+  color: #d8abb2;
+  transition: bottom .4s；
+}
+/*设置Swiper滑块组件中前后导航按钮样式*/
+
+/*————discount——————*/
+
+.discount__container {
+  row-gap: 3.5rem;
+}
+
+.discount__data {
+  text-align: center;
+}
+
+.discount__title {
+  margin-bottom: 1rem;
+}
+
+.discount__description {
+  margin-bottom: 2rem;
+}
+
+.discount__images {
+  display: flex;
+  justify-content: center;
+}
+
+.discount__img-1,
+.discount__img-2 {
+  width: 170px;
+}
+
+.discount__img-1 {
+  transform: translateX(1rem) rotate(-10deg);
+}
+
+.discount__img-2 {
+  transform: translateX(-1rem) rotate(10deg);
+}
+
+/*————————new book————————*/
+
+.new__card {
+  display: flex;
+  align-items: center;
+  column-gap: 2.5rem;
+  background-color: #f6f6f6;
+  padding: 1.5rem 1rem;
+  color: #9d9d9d;
+  border-radius: 20px;
+  border: 2px solid #ebd7da;
+  transition: border .4s, background-color .4s;
+}
+
+.new__card:hover {
+  border: 2px solid #d8abb2;
+}
+
+.new__img {
+  width: 100px;
+}
+
+.new__title {
+  font-size: 1rem;
+  margin-bottom: .5rem;
+}
+
+.new__prices {
+  display: flex;
+  align-items: center;
+  column-gap: .75rem;
+  margin-bottom: .75rem;
+}
+
+.new__price {
+  color: #9d797d;
+}
+
+.new__past {
+  font-size: .813rem;
+  text-decoration: line-through;
+}
+
+.new__stars {
+  color: #d8abb2;
+}
+
+/*———————— BREAKPOINTS ————————*/
+@media screen and (max-width: 320px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .nav__menu {
+    padding-inline: 3rem;
+  }
+
+  .discount__img-1,
+  .discount__img-2 {
+    width: 140px;
+  }
+
+  .new__card {
+    flex-direction: column;
+  }
+
+  .footer__data {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+}
+
+/*—————— For medium devices ——————*/
+
+@media screen and (min-width: 768px) {
+  .home__container {
+    grid-template-columns: 580px;
+  }
+
+  .home__data {
+    width: 420px;
+   justify-self: center;
+  }
+
+  .services__container {
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+    column-gap: 5rem;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1150px) {
+  .section {
+    padding-block: 7rem 2rem;
+  }
+
+  .services__container {
+    column-gap: 10rem;
+  }
+
+  .services__card i{
+    font-size: 3.6rem;
+  }
+
+  .Volume__container {
+    padding-top: 2rem;
+  }
+
+  .Volume__title {
+    font-size: 1.5rem;
+  }
+
+  .discount__container {
+    grid-template-columns: 615px 500px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .discount__data {
+    order: 1;
+  }
+
+  .discount__data,
+  .discount__title {
+    text-align: initial;
+  }
+
+  .discount__description {
+    margin-bottom: 3.5rem;
+  }
+
+  .discount__img-1,
+  .discount__img-2 {
+    width: 300px;
+  }
+
+  .new__container {
+    padding-top: 2rem;
+  }
+
+  .new__card {
+    padding: 1.5rem;
+  }
+
+  .new__img {
+    width: 120px;
+  }
+
+  .new__title {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    padding-block: 6rem 3rem;
+  }
+
+  .footer__data {
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 4.5rem;
+  }
+
+  .footer__logo,
+  .footer__title {
+    font-size:1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer__link {
+    row-gap: 1rem;
+  }
+
+  .footer__social {
+    column-gap: 1.5rem;
+  }
+
+  .footer__social-link {
+    font-size: 1.5rem;
+  }
+
+  .footer__copy {
+    margin-top: 7.5rem;
+  }
+
+  .scrollup {
+    right: 3rem;
+  }
+
+  .show-scroll {
+    bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  .container {
+    margin-inline: auto;
+  }
+
+  .home__container {
+    grid-template-columns: 435px 745px;
+    align-items: center;
+    padding-block: 7rem 2rem;
+  }
+
+  .home__data {
+    text-align: initial;
+  }
+
+  .home__description {
+    margin-bottom: 4rem;
+  }
+
+  .home__article,
+  .home__img {
+    width: 290px;
+  }
+}

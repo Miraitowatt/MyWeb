@@ -1,0 +1,63 @@
+.footer {
+    position: relative;
+    background: url(../images/products/footer.jpg) no-repeat;
+    background-position: center;
+    background-size: center;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+}
+
+.footer img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10rem;
+    width: 100%;
+}
+
+.footer .share {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .share a {
+    color: #fff;
+    border-color: #fff;
+    font-size: 1rem;
+}
+
+.footer .share a:hover {
+    color: #130f40;
+}
+
+.footer .share a::before {
+    background: #fff;
+}
+
+.footer .share a i {
+    padding-right: .5rem;
+}
+
+.footer .credit {
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    margin-top: 1.5rem;
+}
+.btn-second {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 2.8rem;
+    border-radius: 5rem;
+    border-top-left-radius: 0;
+    border: 0.2rem solid #ffffff;
+    cursor: pointer;
+    background: none;
+    font-size: 1.7rem;
+    overflow: hidden;
+    z-index: 0;
+    position: relative;
+}
